@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" onCut="return false" onPaste="return false" onCopy="return false" placeholder="Enter">
+    <div id="name_message"></div>
+    <button type="submit" onclick="Fun()">Submit</button>
+</body>
+<script>
+    function Fun()
+    {
+        var name = document.getElementById('name').value;
+        if(!name)
+        {
+            document.getElementById('name_message').innerHTML="pls Fill the Form";
+            document.getElementById('name_message').style.color="red";
+        }
+            else
+            {
+                document.getElementById('name_message').innerHTML="";
+            document.getElementById('name_message').style.css="";
+
+            }
+            if(!name==""){
+                document.getElementById('name_message').innerHTML="";
+            }
+     }
+    
+</script>
+</html>
